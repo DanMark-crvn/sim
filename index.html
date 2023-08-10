@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>SIM Reader</title>
+</head>
+<body>
+    <header>
+        <h1>Sim Card Reader</h1>
+    </header>
+    <section>
+        <div class="container">
+            <div class="item">
+                <h2>Check your Sim Here!</h2>
+                <div class="inputs">
+                    <p id="result"></p>
+                    <div class="icon">
+                        <i class="fa-solid fa-sim-card fa-beat" style="color: #c15b49;"></i>
+                    </div>
+                    <input type="tel" id="mobilenumber" placeholder="Mobile Number: " pattern="[0-9]{11}" maxlength="11" required>
+                    <button class="button" onclick="checkNetwork()">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
